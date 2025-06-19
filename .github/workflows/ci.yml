@@ -26,4 +26,4 @@ jobs:
 
       - name: Upload code to GCS bucket
         run: |
-          gsutil -m cp -r ./ gs://gs://cvs-qa/scripts/
+          gsutil cp src/word_count.py gs://cvs-qa/scripts/
