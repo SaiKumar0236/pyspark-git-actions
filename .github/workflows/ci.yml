@@ -27,3 +27,11 @@ jobs:
       - name: Upload code to GCS bucket
         run: |
           gsutil cp src/word_count.py gs://cvs-qa/scripts/
+      - name: Submit Dataproc batch job
+        run: |
+          gcloud dataproc batches submit pyspark \
+          --region=us-central1-a \
+          --project=clever-coast-461101-t5 \
+          --batch=github-batch-job \
+          --python-file=gs://cvs-qa/scripts/word_count.py
+
