@@ -12,11 +12,11 @@ This is a sample PySpark project demonstrating how to integrate GitHub Actions f
    ```bash
    pip install -r requirements.txt
 2.Run the PySpark job:
-   ```
+   ```bash
    python src/word_count.py
    ```
 3.Run tests:
-   ```
+   ```bash
    python -m unittest discover -s tests
    ```
 GitHub Actions
