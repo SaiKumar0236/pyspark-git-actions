@@ -1,4 +1,4 @@
- name: Submit PySpark Job to Dataproc
+ name: upload code to gs bucket
 
  on:
   push:
