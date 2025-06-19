@@ -12,11 +12,13 @@ This is a sample PySpark project demonstrating how to integrate GitHub Actions f
    ```bash
    pip install -r requirements.txt
 2.Run the PySpark job:
-   ```bash
+   ```
    python src/word_count.py
+   ```
 3.Run tests:
+   ```
    python -m unittest discover -s tests
-
+   ```
 GitHub Actions
 The workflow (.github/workflows/ci.yml) runs tests automatically on every push or pull request to the main branch.
 
