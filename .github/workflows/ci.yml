@@ -30,8 +30,8 @@ jobs:
       - name: Submit Dataproc batch job
         run: |
           gcloud dataproc batches submit pyspark \
-          --region=us-central1-a \
-          --project=clever-coast-461101-t5 \
-          --batch=github-batch-job \
-          --python-file=gs://cvs-qa/scripts/word_count.py
+            --region=us-central1-a \
+            --project=clever-coast-461101-t5 \
+            --batch=github-batch-job \
+            gs://cvs-qa/scripts/word_count.py
 
