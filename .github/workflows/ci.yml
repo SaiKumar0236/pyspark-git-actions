@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+permissions:
+  id-token: write      # ✅ Required for Workload Identity Federation
+  contents: read       # ✅ Required for actions/checkout
+
 jobs:
   upload-to-gcs:
     runs-on: ubuntu-latest
